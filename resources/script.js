@@ -127,6 +127,7 @@ function UserInput(ps) {
 */
 
 function generatePassword() {
+  
     enter = parseInt(prompt("How many characters would you like in your password?"));
   if(!enter) {
       alert("Please add in a number!");
@@ -188,11 +189,12 @@ function generatePassword() {
         choice = space.concat(alpha2);
         break;
   }
+  return choice;
   var password = [];
 
 
   for (var i = 0; i < enter; i++) {
-      var pickChoices = choice[Math.floor(Math.random() * choice.length)];
+      var pickChoices = choice[Math.floor(Math.random() * choice.length())];
       password.push(pickChoices);
   }
 
