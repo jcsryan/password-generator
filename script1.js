@@ -13,7 +13,8 @@ get.addEventListener("click", function () {
 });
 
 function generatePassword() {
- 
+    givenString = ''
+    totalString = ''
     enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
 
     if (!enter) {
@@ -24,17 +25,20 @@ function generatePassword() {
 
     }  if(confirmNumber = confirm("Will this contain numbers?")) {
         givenString += numbers;
-        
+        console.log(givenString)
     }  if(confirmCharacter = confirm("Will this contain special characters?")){
         givenString += symbol;
+        console.log(givenString)
     }  if(confirmUppercase = confirm("Will this contain Uppercase letters?")){
         givenString += alphabetCap;
+        console.log(givenString)
     }  if(confirmLowercase = confirm("Will this contain Lowercase letters?")){
         givenString += alphabet;
+        console.log(givenString)
+
     }
     var totalString = givenString;
-     console.log(givenString)
-
+     
 var passwordTotal=''
 for (var i = 0; i < enter; i++) {
     var pickChoices = totalString[Math.floor(Math.random() * totalString.length)];
