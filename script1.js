@@ -38,7 +38,7 @@ function generatePassword() {
 var passwordTotal=''
 for (var i = 0; i < enter; i++) {
     var pickChoices = totalString[Math.floor(Math.random() * totalString.length)];
-    pickChoices += passwordTotal
+    passwordTotal += pickChoices
     document.getElementById("password").textContent = passwordTotal;
 
 }
