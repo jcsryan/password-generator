@@ -6,3 +6,4 @@ The following JS logic pulls from four existing strings and concatenates them in
 The first and second versions of JS logic I created are in the file other logics, they both work when linked up to the HTML file.
 Here is the chosen logic. 
 
+![](2020-04-05-08-05-21.png)
